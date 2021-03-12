@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CryptoSwatch Builder</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="https://vanderlee.github.io/colorpicker/jquery.colorpicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://vanderlee.github.io/colorpicker/jquery.colorpicker.css">
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css">
+
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+    
+    <h1 class="logo">Crypto Swatch</h1>
+
+    <div class="wrapper">
+        <div class="colorpicker">
+            <h4 class="number">yw4r.wam</h4>
+        </div> 
+        <h2 class="series">CryptoSwatch</h2>
+        <h3 class="account">Builder Series</h3>
+    </div>
+
+    <script type="text/javascript">//<![CDATA[
+
+
+        var colorpickerOptions = {
+            parts: ['map', 'bar', 'hex', 'hsv', 'rgb', 'alpha', 'preview', 'swatches', 'footer'],
+            altProperties: 'background-color',
+            altField: '.colorpicker',
+            color: 'fe9810',
+            select: function (event, color) {
+                var color_in_hex_format = color.formatted;
+                console.log(color_in_hex_format);
+            }
+        
+            ,inline: false
+        };
+        
+        $('.colorpicker').colorpicker(colorpickerOptions);
+        
+        
+          //]]></script>
+</body>
+</html>
